@@ -5,195 +5,137 @@
 }
 html {
     font-size: 62.5%;
-}
-.hdr-uno {
-    width: 100%;
-    height: 11rem;
-    background-color:#1765be;
-    font-family: 'Roboto', sans-serif;
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 20rem auto 1fr;
-    position: relative;
-}
-.hdr-uno > div {
-    grid-column: 3;
-    position: relative;
-    display: grid;
-    align-items: center;
-    grid-template-columns: auto auto auto;
-}
-.logo-ddtech {
-    width: 20rem;
-    position: absolute;
-    bottom: 3rem;
-    filter: invert(100%) sepia(0%) saturate(0%) brightness(156%) contrast(101%);
-    grid-column: 2;
-}
-.nav-cont {
-    grid-column: 2;
-    position: relative;
-}
-.hdr-uno .nav-cont ul{
-    display: flex;
-    height: 3rem;
-    align-items: center;
-    list-style: none;
-}
-.hdr-uno .nav-cont img {
-    width: 1.2rem;
-    filter: invert(100%) sepia(0%) saturate(5%) hue-rotate(163deg) brightness(103%) contrast(101%);
-}
-.hdr-uno .nav-cont li a{
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    padding: 1.5rem;
-}
-.hdr-uno .nav-cont li:nth-of-type(-n+6)::after {
-    content: "|";
-    font-size: 1.2rem;
-    color: white;
-}
-.search-cont {
-    grid-column: 3;
-    display: flex;
-    margin: 0 2rem 0 3rem;
-}
-.search {
-    width: 18.3rem;
-    height: 3.6rem;
-    background-color: #4990df;
-    border-radius: 2.5rem 0 0 2.5rem;
-}
-.search input {
-    width: 100%;
-    height: 100%;
-    border: none;
-    outline: none;
-    background-color: transparent;
-    color: white;
-    padding: 1rem;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-}
-.search-cont p {
-    display: grid;
-    place-items: center;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    width: 6.4rem;
-    height: 3.6rem;
-    background-color: #4990df;
-    cursor: pointer;
-}
-.search-cont p:hover {
-    transition: .5s linear;
-    background-color: #48b9e6a1;
-}
-.agr-car-cont {
-    grid-column: 4;
-    display: flex;
-}
-.agr-car-cont >:nth-of-type(1) {
-    display: flex;
-    color: white;
-    font-size: 14px;
-}
-.agr-car-cont >:nth-of-type(1) img {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-left: .5rem;
-    filter: invert(100%) sepia(0%) saturate(5%) hue-rotate(163deg) brightness(103%) contrast(101%);
-}
-.agr-car-cont >:nth-of-type(2) a{
-    color: white;
-    font-size: 14px;
-    text-decoration: none;
-    margin: 1rem;
-}
-.agr-car-cont >:nth-of-type(2) a::before {
-    content: "|";
-    margin-right: 1rem;
-}
-.tag-uno {
-    background-color: #ff7878;
-    position: absolute;
-    right: 54%;
-    top: -2.5rem;
-}
-.tag-dos {
-    background-color: #f1c40f;
-    position: absolute;
-    right: 35%;
-    top: -2.5rem;
-}
-.buttom {
-    display: inline-grid;
-    place-items: center;
-    width: 6rem;
-    height: 2rem;
-    z-index: 1;
-}
-.tag-uno::before {
-    content: "";
-    display: block;
-    width: 1.5rem;
-    height: 1.5rem;
-    transform: rotateZ(45deg);
-    bottom: -.5rem;
-    z-index: -1;
-    position: absolute;
-    background-color: #ff7878;
-}
-.tag-dos::before {
-    content: "";
-    display: block;
-    width: 1.5rem;
-    height: 1.5rem;
-    transform: rotateZ(45deg);
-    bottom: -.5rem;
-    z-index: -1;
-    position: absolute;
-    background-color: #f1c40f;
-}
-.buttom a {
-    color: white;
-    font-size: 12px;
-    text-decoration: none;
-}
-#btn-hdr-uno {
-    display: none;
-    grid-column: 3;
-}
-.label-uno {
-    display: none;
-    grid-column: 3;
-    width: 5rem;
-    height: 5rem;
-}
-.img-menu-uno {
-    position: absolute;
-    right: 0;
-    background-image: url('https://cdn.icon-icons.com/icons2/1993/PNG/128/burger_line_list_menu_nav_navigation_option_icon_123231.png');
-    background-repeat: no-repeat;
-    background-size: 3rem;
-    background-position: center;
-    width: 5rem;
-    height: 3.5rem;
-    border-radius: 5px;
-    border: 1px solid rgb(0, 0, 0);
-    filter: invert(100%) sepia(0%) saturate(5%) hue-rotate(163deg) brightness(103%) contrast(101%);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-@media (max-width:76rem) {
-
-    .label-uno {
-        display: block;
+@media (max-width:1200px) {
+    .hdr {
+        width: 100%;
+        height: 10rem;
+        background-color: rgb(23, 101, 190);
+        display: flex;
+        justify-content: center;
+        position: relative;
     }
-
-    #btn-hdr-uno:checked ~ .nav-content {
-        margin: 0;
+    .hdr-cont {
+        width: 97rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo {
+        filter: grayscale(100%) invert(100%) sepia(0%) saturate(9485%) hue-rotate(122deg) brightness(141%) contrast(104%);
+        width: 20rem;
+    }
+    .menu-cont input {
+        display: none;
+    }
+    .menu-cont label img {
+        width: 4.5rem;
+        height: 3.5rem;
+        filter: grayscale(100%) invert(100%) sepia(0%) saturate(9485%) hue-rotate(122deg) brightness(181%) contrast(404%);
+        border: 1px solid;
+        border-radius: 5px;
+        padding: 1rem;
+    }
+    .transition {
+        display: flex;
+        justify-content: center;
+        background-color: rgb(23, 101, 190);
+        position: absolute;
+        top: 9rem;
+        left: 0px;
+    }
+    .nav-cont {
+        width: 100%;
+        height: 0px;
+        overflow: hidden;
+        transition: all 0.2s linear;
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 97rem;
+        color: white;
+        font-size: 1.2rem;
+        border-top: 1.5px solid rgba(6, 56, 97, 0.472);
+        padding: 2rem;
+        text-decoration: none;
+    }
+    .menu ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+    .menu ul li {
+        text-align: center;
+        margin: 1.5rem;
+    }
+    .menu ul a:last-child {
+        color: white;
+        text-decoration: none;
+    }
+    .menu ul li img {
+        width: 1.5rem;
+        filter: grayscale(100%) invert(100%) sepia(0%) saturate(9485%) hue-rotate(122deg) brightness(181%) contrast(404%);
+    }
+    .search-cont {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        border-top: 1px solid rgb(47, 121, 206);
+        border-bottom: 1px solid rgb(47, 121, 206);
+    }
+    .search {
+        width: 85%;
+        height: 4rem;
+        background-color: rgb(73, 144, 223);
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem;
+    }
+    .search input {
+        display: inline-block;
+        width: 90%;
+        height: 100%;
+        background-color: transparent;
+        color: white;
+        padding: 1rem;
+        border: none;
+        outline: none;
+    }
+    .search div {
+        width: 10%;
+        height: 100%;
+        display: inline-grid;
+        color: white;
+        font-size: 1.4rem;
+        place-items: center;
+    }
+    .search div:hover {
+        transition: .5s linear;
+        background-color: rgba(73, 181, 223, 0.466);
+    }
+    .menu a:last-child {
+        color: white;
+        text-decoration: none;
+    }
+    .car-cont a {
+        display: flex;
+        color: white;
+        font-size: 1.2rem;
+        margin: 2rem;
+        text-decoration: none;
+    }
+    .menu .car-shop {
+        margin-left: 0.5rem;
+        width: 1.5rem;
+        filter: grayscale(100%) invert(100%) sepia(0%) saturate(9485%) hue-rotate(122deg) brightness(181%) contrast(404%);
+    }
+    #btn-menu:checked ~ .nav-cont {
+        height: 50rem;
+        transition: 0.4s cubic-bezier(.55,.04,.6,1);
     }
 }
