@@ -7,16 +7,16 @@ html {
     font-size: 62.5%;
     font-family: Arial, Helvetica, sans-serif;
 }
+.hdr {
+    width: 100%;
+    height: 10rem;
+    background-color: rgb(23, 101, 190);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
 
 @media (max-width:1200px) {
-    .hdr {
-        width: 100%;
-        height: 10rem;
-        background-color: rgb(23, 101, 190);
-        display: flex;
-        justify-content: center;
-        position: relative;
-    }
     .hdr-cont {
         width: 97rem;
         display: flex;
@@ -98,7 +98,7 @@ html {
     }
     .search input {
         display: inline-block;
-        width: 90%;
+        width: 100%;
         height: 100%;
         background-color: transparent;
         color: white;
@@ -107,11 +107,12 @@ html {
         outline: none;
     }
     .search div {
-        width: 10%;
+        width: auto;
         height: 100%;
+        padding: 0 1rem 0 1rem;
         display: inline-grid;
         color: white;
-        font-size: 1.4rem;
+        font-size: 1s4%;
         place-items: center;
     }
     .search div:hover {
@@ -137,5 +138,14 @@ html {
     #btn-menu:checked ~ .nav-cont {
         height: 50rem;
         transition: 0.4s cubic-bezier(.55,.04,.6,1);
+    }
+}
+@media (max-width:990px) {
+    .hdr-cont {
+        width: 75rem;
+    }
+    .menu {
+        width: 75rem;
+        border-top: 1.5px solid rgba(6, 56, 97, 0.472);
     }
 }
