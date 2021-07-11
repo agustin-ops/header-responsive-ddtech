@@ -13,8 +13,122 @@ html {
     background-color: rgb(23, 101, 190);
     display: flex;
     justify-content: center;
+}
+.hdr-cont {
+    width: 120rem;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    position: relative;
+    bottom: .8rem;
+    filter: grayscale(100%) invert(100%) sepia(0%) saturate(9485%) hue-rotate(122deg) brightness(141%) contrast(104%);
+    width: 20rem;
+}
+.menu-cont #btn-menu,label img {
+    display: none;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
     position: relative;
 }
+.menu ul {
+    margin: 0 2rem 0 2rem;
+    display: flex;
+    list-style: none;
+}
+.tag {
+    position: absolute;
+    bottom: 6rem;
+    padding: .5rem;
+    left: 22%;
+    z-index: 1;
+}
+.tag::after {
+    content: "";
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    left: 32%;
+    top: .7rem;
+    z-index: -1;
+    background-color: inherit;
+    transform: rotateZ(45deg);
+}
+.t-gam-one {
+    background-color: #ff7878;
+}
+.t-new-two  {
+    left: 35%;
+    background-color: #f1c40f;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+.menu ul li img {
+    width: 1.2rem;
+    filter: grayscale(100%) invert(100%) sepia(0%) saturate(9485%) hue-rotate(122deg) brightness(181%) contrast(404%);
+}
+.menu ul li:nth-child(-n+6)::after {
+    content: "|";
+    color: white;
+    margin: 1.2rem;
+}
+.search {
+    display: flex;
+    justify-content: space-between;
+    width: 25rem;
+    height: 4rem;
+    margin: 2rem;
+    border-top-left-radius:  50px;
+    border-bottom-left-radius:  50px;
+    overflow: hidden;
+    background-color: #4990df;
+}
+.search input {
+    display: inline-block;
+    padding: 1rem;
+    color: white;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.search div {
+    width: auto;
+    height: 100%;
+    padding: 0 1rem 0 1rem;
+    display: inline-grid;
+    color: white;
+    place-items: center;
+}
+.search div:hover {
+    transition: .5s linear;
+    background-color: rgba(73, 181, 223, 0.466);
+}
+.menu a:last-child {
+    color: white;
+    text-decoration: none;
+}
+.car-cont a {
+    display: flex;
+    color: white;
+    font-size: 1.2rem;
+    margin: 2rem;
+    text-decoration: none;
+}
+.menu .car-shop {
+    margin-left: 0.5rem;
+    width: 1.5rem;
+    filter: grayscale(100%) invert(100%) sepia(0%) saturate(9485%) hue-rotate(122deg) brightness(181%) contrast(404%);
+}
+
 
 @media (max-width:1200px) {
     .hdr-cont {
@@ -23,14 +137,11 @@ html {
         justify-content: space-between;
         align-items: center;
     }
-    .logo {
-        filter: grayscale(100%) invert(100%) sepia(0%) saturate(9485%) hue-rotate(122deg) brightness(141%) contrast(104%);
-        width: 20rem;
-    }
     .menu-cont input {
         display: none;
     }
     .menu-cont label img {
+        display: block;
         width: 4.5rem;
         height: 3.5rem;
         filter: grayscale(100%) invert(100%) sepia(0%) saturate(9485%) hue-rotate(122deg) brightness(181%) contrast(404%);
@@ -112,28 +223,11 @@ html {
         padding: 0 1rem 0 1rem;
         display: inline-grid;
         color: white;
-        font-size: 1s4%;
         place-items: center;
     }
     .search div:hover {
         transition: .5s linear;
         background-color: rgba(73, 181, 223, 0.466);
-    }
-    .menu a:last-child {
-        color: white;
-        text-decoration: none;
-    }
-    .car-cont a {
-        display: flex;
-        color: white;
-        font-size: 1.2rem;
-        margin: 2rem;
-        text-decoration: none;
-    }
-    .menu .car-shop {
-        margin-left: 0.5rem;
-        width: 1.5rem;
-        filter: grayscale(100%) invert(100%) sepia(0%) saturate(9485%) hue-rotate(122deg) brightness(181%) contrast(404%);
     }
     #btn-menu:checked ~ .nav-cont {
         height: 50rem;
