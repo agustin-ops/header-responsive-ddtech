@@ -133,12 +133,7 @@ html {
 @media (max-width:1200px) {
     .hdr-cont {
         width: 97rem;
-        display: flex;
         justify-content: space-between;
-        align-items: center;
-    }
-    .menu-cont input {
-        display: none;
     }
     .menu-cont label img {
         display: block;
@@ -164,33 +159,25 @@ html {
         transition: all 0.2s linear;
     }
     .menu {
-        display: flex;
         flex-direction: column;
-        align-items: center;
         width: 97rem;
-        color: white;
-        font-size: 1.2rem;
         border-top: 1.5px solid rgba(6, 56, 97, 0.472);
         padding: 2rem;
-        text-decoration: none;
     }
     .menu ul {
         width: 100%;
-        display: flex;
         flex-direction: column;
-        list-style: none;
     }
     .menu ul li {
         text-align: center;
         margin: 1.5rem;
     }
-    .menu ul a:last-child {
-        color: white;
-        text-decoration: none;
-    }
     .menu ul li img {
         width: 1.5rem;
-        filter: grayscale(100%) invert(100%) sepia(0%) saturate(9485%) hue-rotate(122deg) brightness(181%) contrast(404%);
+    }
+    .menu ul li:nth-child(-n+6)::after {
+        content: "";
+        margin: 0;
     }
     .search-cont {
         width: 90%;
@@ -202,32 +189,11 @@ html {
     .search {
         width: 85%;
         height: 4rem;
-        background-color: rgb(73, 144, 223);
-        display: flex;
-        justify-content: space-between;
         margin: 1rem;
+        border-radius: 0;
     }
-    .search input {
-        display: inline-block;
-        width: 100%;
-        height: 100%;
-        background-color: transparent;
-        color: white;
-        padding: 1rem;
-        border: none;
-        outline: none;
-    }
-    .search div {
-        width: auto;
-        height: 100%;
-        padding: 0 1rem 0 1rem;
-        display: inline-grid;
-        color: white;
-        place-items: center;
-    }
-    .search div:hover {
-        transition: .5s linear;
-        background-color: rgba(73, 181, 223, 0.466);
+    .tag {
+        display: none;
     }
     #btn-menu:checked ~ .nav-cont {
         height: 50rem;
